@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeightWidth</title>
+    <style>
+        .box {
+            background-color: lightblue;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+        .fixed-size {
+            width: 200px;
+            height: 100px;
+        }
+        .percentage-size {
+            width: 50%;
+            height: 50%;
+        }
+        .auto-size {
+            width: auto;
+            height: auto;
+        }
+        .viewport-size {
+            width: 50vw;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="box fixed-size">Fixed size (200px x 100px)</div>
+    <div class="box percentage-size">Percentage size (50% x 50%)</div>
+    <div class="box auto-size">Auto size</div>
+    <div class="box viewport-size">Viewport size (50vw x 50vh)</div>
+</body>
+</html>
