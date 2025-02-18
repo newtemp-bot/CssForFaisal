@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width Examples</title>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+        .fixed-width-container {
+            width: 600px;
+            margin: 20px auto;
+            background-color: lightcoral;
+            padding: 20px;
+            text-align: center;
+        }
+        .min-width-container {
+            min-width: 600px;
+            margin: 20px auto;
+            background-color: lightgreen;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This container has a max-width of 600px</h1>
+        <p>Resize the browser window to see the effect.</p>
+    </div>
+    <div class="fixed-width-container">
+        <h1>This container has a fixed width of 600px</h1>
+        <p>Resize the browser window to see the effect.</p>
+    </div>
+    <div class="min-width-container">
+        <h1>This container has a min-width of 600px</h1>
+        <p>Resize the browser window to see the effect.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Sticky Example</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        .parallax {
+            height: 100vh;
+            background: url('https://picsum.photos/1920/1080') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .content {
+            height: 2000px;
+            background: linear-gradient(to bottom, #f06, #4a90e2);
+            padding-top: 50px;
+        }
+        .sticky-element {
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            top: 0;
+            background-color: yellow;
+            padding: 10px;
+            border: 2px solid black;
+            width: 200px;
+            text-align: center;
+        }
+        .sticky-element img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax"></div>
+    <div class="content">
+        <div class="sticky-element">
+            <img src="https://picsum.photos/200/100" alt="Sticky Image">
+            I am a sticky element!
+        </div>
+        <p>Scroll down to see the sticky element in action.</p>
+        <!-- Add more content here to make the page scrollable -->
+    </div>
+</body>
+</html>

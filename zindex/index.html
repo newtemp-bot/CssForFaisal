@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Z-Index Example</title>
+        <style>
+            .container {
+                position: relative;
+                width: 500px;
+                height: 500px;
+            }
+            .box {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                opacity: 0.7;
+            }
+            .box1 {
+                background: red;
+                top: 50px;
+                left: 50px;
+                z-index: 1;
+            }
+            .box2 {
+                background: blue;
+                top: 100px;
+                left: 100px;
+                z-index: 2;
+            }
+            .box3 {
+                background: green;
+                top: 150px;
+                left: 150px;
+                z-index: 3;
+            }
+            .box4 {
+                background: yellow;
+                top: 200px;
+                left: 200px;
+                z-index: 4;
+            }
+            .box5 {
+                background: purple;
+                top: 250px;
+                left: 250px;
+                z-index: 5;
+            }
+            .box6 {
+                background: orange;
+                top: 300px;
+                left: 300px;
+                z-index: 6;
+            }
+            .box7 {
+                background: pink;
+                top: 350px;
+                left: 350px;
+                z-index: 7;
+            }
+            .text{
+                position: absolute;
+                width: 500px;
+                background-color: aqua;
+                z-index: 4;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At explicabo dicta nemo unde error illum repellendus? Voluptatibus debitis a sit. Aut sed, veniam iure eligendi enim tenetur quae saepe consequuntur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At explicabo dicta nemo unde error illum repellendus? Voluptatibus debitis a sit. Aut sed, veniam iure eligendi enim tenetur quae saepe consequuntur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At explicabo dicta nemo unde error illum repellendus? Voluptatibus debitis a sit. Aut sed, veniam iure eligendi enim tenetur quae saepe consequuntur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At explicabo dicta nemo unde error illum repellendus? Voluptatibus debitis a sit. Aut sed, veniam iure eligendi enim tenetur quae saepe consequuntur?
+        </div>
+        <div class="container">
+            <div class="box box1">1</div>
+            <div class="box box2">2</div>
+            <div class="box box3">3</div>
+            <div class="box box4">4</div>
+            <div class="box box5">5</div>
+            <div class="box box6">6</div>
+            <div class="box box7">7</div>
+        </div>
+    </body>
+</html>
